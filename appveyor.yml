@@ -1,8 +1,9 @@
 build: off
 test_script:
-  - ps: "python -m unittest test_module"
+  - "python -m unittest test_module"
   - "pip install codecov"
   - "pip install coverage"
   - "codecov --token='1ca23a11-ae36-419f-8ada-c27fdbbede61'"
   - "coverage run test_module.py"
+on_finish:
   - "coverage report"
