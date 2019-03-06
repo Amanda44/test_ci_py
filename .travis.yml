@@ -1,0 +1,9 @@
+language: python
+install:
+  - pip install codecov
+  - pip install coverage
+script:
+  - python -m unittest test_module
+  - codecov
+  - coverage run test_module.py
+  - coverage report

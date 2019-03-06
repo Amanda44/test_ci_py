@@ -1,9 +1,0 @@
-build: off
-test_script:
-  - ps: "python -m unittest test_module"
-on_finish:
-  - "pip install codecov"
-  - "pip install coverage"
-  - "codecov -X gcov"
-  - "coverage run test_module.py"
-  - "coverage report"
