@@ -1,2 +1,2 @@
-before_build: python -m unittest test_module
 build: off
+before_build: python -m unittest test_module
