@@ -6,3 +6,4 @@ on_finish:
   - "codecov --token='1ca23a11-ae36-419f-8ada-c27fdbbede61'"
   - "pip install coverage"
   - "coverage run test_module.py"
+  - "coverage report"
