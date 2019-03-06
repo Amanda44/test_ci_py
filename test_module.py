@@ -9,11 +9,6 @@ class RandomTest(unittest.TestCase):
         """Initialisation des tests."""
         self.liste = list(range(10))
 
-    def test_choice(self):
-        """Test le fonctionnement de la fonction 'random.choice'."""
-        elt = random.choice(self.liste)
-        self.assertIn(elt, self.liste)
-
     def test_shuffle(self):
         """Test le fonctionnement de la fonction 'random.shuffle'."""
         random.shuffle(self.liste)
@@ -28,3 +23,9 @@ class RandomTest(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             random.sample(self.liste, 20)
+
+    def test_choice(self):
+        """Test le fonctionnement de la fonction 'random.choice'."""
+        liste = list(range(10))
+        elt = random.choice(liste)
+        self.assertIn(elt, ('a', 'b', 'c'))
