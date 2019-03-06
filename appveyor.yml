@@ -1,1 +1,2 @@
 build: off
+after_build: unittest.main()
