@@ -1,0 +1,13 @@
+[run]
+branch = True
+source = C:/home/amanda/Documents/imie_projects/COURS/integration_continue/TD/test_ci_py
+
+[report]
+exclude_lines =
+    if self.debug:
+    pragma: no cover
+    raise NotImplementedError
+    if __name__ == .__main__.:
+ignore_errors = True
+omit =
+    tests/*
