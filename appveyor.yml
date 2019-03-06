@@ -4,3 +4,4 @@ test_script:
 on_finish:
   - "pip install codecov"
   - "codecov --token='1ca23a11-ae36-419f-8ada-c27fdbbede61'"
+  - "coverage run tests.py"
