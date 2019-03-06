@@ -1,2 +1,2 @@
 build: off
-after_build: unittest.main()
+after_build: python -m unittest test_module
