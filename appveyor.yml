@@ -4,6 +4,7 @@ test_script:
 on_finish:
   - "pip install codecov"
   - "pip install coverage"
+  - "coverage combine"
   - "codecov --token='1ca23a11-ae36-419f-8ada-c27fdbbede61'"
   - "coverage run test_module.py"
   - "coverage report"
