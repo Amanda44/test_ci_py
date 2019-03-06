@@ -10,5 +10,3 @@ class RandomTest(unittest.TestCase):
         liste = list(range(10))
         elt = random.choice(liste)
         self.assertIn(elt, ('a', 'b', 'c'))
-
-    unittest.main()
