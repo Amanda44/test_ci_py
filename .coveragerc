@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = C:/home/amanda/Documents/imie_projects/COURS/integration_continue/TD/test_ci_py
+source = /home/amanda/Documents/imie_projects/COURS/integration_continue/TD/test_ci_py
 
 [report]
 exclude_lines =
