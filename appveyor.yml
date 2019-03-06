@@ -1,2 +1,3 @@
 build: off
-after_build: python -m unittest test_module
+after_build:
+  - cmd: python -m unittest test_module
